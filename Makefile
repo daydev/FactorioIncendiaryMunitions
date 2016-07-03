@@ -1,4 +1,4 @@
-VERSION := 0.1.0
+VERSION := 0.2.0
 NAME := IncendiaryMunitions
 FACTORIO_HOME := $$HOME/bin/games/factorio
 
