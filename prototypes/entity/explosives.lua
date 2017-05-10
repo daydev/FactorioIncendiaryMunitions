@@ -8,7 +8,16 @@ data.raw["projectile"]["explosive-rocket"].action =
         {
             {
                 type = "create-entity",
-                entity_name = "explosion"
+                entity_name = "big-explosion"
+            },
+            {
+                type = "damage",
+                damage = { amount = 50, type = "explosion" }
+            },
+            {
+                type = "create-entity",
+                entity_name = "small-scorchmark",
+                check_buildability = true
             },
             {
                 type = "nested-result",
@@ -23,7 +32,7 @@ data.raw["projectile"]["explosive-rocket"].action =
                         {
                             {
                                 type = "damage",
-                                damage = { amount = 40, type = "explosion" }
+                                damage = { amount = 100, type = "explosion" }
                             },
                             {
                                 type = "create-entity",
@@ -51,8 +60,7 @@ data.raw["projectile"]["explosive-cannon-projectile"].final_action =
         {
             {
                 type = "create-entity",
-                entity_name = "big-explosion",
-                check_buildability = true
+                entity_name = "big-explosion"
             },
             {
                 type = "nested-result",
@@ -67,7 +75,7 @@ data.raw["projectile"]["explosive-cannon-projectile"].final_action =
                         {
                             {
                                 type = "damage",
-                                damage = { amount = 80, type = "explosion" }
+                                damage = { amount = 300, type = "explosion" }
                             },
                             {
                                 type = "create-entity",
