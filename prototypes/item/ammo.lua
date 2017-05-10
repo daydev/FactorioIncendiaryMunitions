@@ -27,11 +27,11 @@ data:extend({
                             },
                             {
                                 type = "damage",
-                                damage = { amount = 3, type = "physical" }
+                                damage = { amount = 6, type = "physical" }
                             },
                             {
                                 type = "damage",
-                                damage = { amount = 1, type = "fire" }
+                                damage = { amount = 2, type = "fire" }
                             },
                             {
                                 type = "create-fire",

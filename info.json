@@ -1,7 +1,7 @@
 {
   "name": "IncendiaryMunitions",
-  "version": "0.2.1",
-  "factorio_version": "0.14",
+  "version": "0.2.2",
+  "factorio_version": "0.15",
   "title": "Incendiary Munitions",
   "author": "daydev",
   "description": "Adds incendiary rounds and shotgun shells as well as incendiary effects to explosive rockets and tank shells",

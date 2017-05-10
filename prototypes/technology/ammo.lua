@@ -4,6 +4,7 @@ data:extend(
         type = "technology",
         name = "incendiary-ammo",
         icon = "__IncendiaryMunitions__/graphics/icons/incendiary-ammo.png",
+        icon_size = 128,
         effects =
         {
             {
@@ -24,7 +25,7 @@ data:extend(
                 {"science-pack-1", 1},
                 {"science-pack-2", 1},
                 {"science-pack-3", 1},
-                {"alien-science-pack", 1}
+                {"military-science-pack", 2}
             },
             time = 30
         },
