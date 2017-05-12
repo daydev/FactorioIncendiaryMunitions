@@ -6,8 +6,9 @@ data:extend({
         energy_required = 3,
         ingredients =
         {
-            { "copper-plate", 5 },
+            { "firearm-magazine", 1 },
             { "steel-plate", 1 },
+            { "copper-plate", 4 },
             { "sulfur", 1 }
         },
         result = "incendiary-rounds-magazine",
@@ -20,8 +21,9 @@ data:extend({
         energy_required = 8,
         ingredients =
         {
-            { "copper-plate", 2 },
-            { "steel-plate", 2 },
+            { "shotgun-shell", 2 },
+            { "copper-plate", 4 },
+            { "steel-plate", 1 },
             { "sulfur", 1 }
         },
         result = "incendiary-shotgun-shell",

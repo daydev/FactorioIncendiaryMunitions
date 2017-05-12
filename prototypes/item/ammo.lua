@@ -36,6 +36,10 @@ data:extend({
                             {
                                 type = "create-fire",
                                 entity_name = "fire-flame"
+                            },
+                            {
+                                type = "create-sticker",
+                                sticker = "fire-sticker"
                             }
                         }
                     }
@@ -57,7 +61,7 @@ data:extend({
         magazine_size = 10,
         subgroup = "ammo",
         order = "a[basic-clips]-c[incendiary-rounds-magazine]",
-        stack_size = 100
+        stack_size = 200
     },
     {
         type = "ammo",
@@ -86,7 +90,7 @@ data:extend({
                 },
                 {
                     type = "direct",
-                    repeat_count = 16,
+                    repeat_count = 12,
                     action_delivery =
                     {
                         type = "projectile",
@@ -102,6 +106,6 @@ data:extend({
         magazine_size = 10,
         subgroup = "ammo",
         order = "b[shotgun]-c[incendiary]",
-        stack_size = 100
+        stack_size = 200
     }
 })
