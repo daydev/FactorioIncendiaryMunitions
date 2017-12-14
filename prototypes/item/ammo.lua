@@ -3,6 +3,7 @@ data:extend({
         type = "ammo",
         name = "incendiary-rounds-magazine",
         icon = "__IncendiaryMunitions__/graphics/icons/incendiary-rounds-magazine.png",
+        icon_size = 32,
         flags = { "goes-to-main-inventory" },
         ammo_type =
         {
@@ -67,6 +68,7 @@ data:extend({
         type = "ammo",
         name = "incendiary-shotgun-shell",
         icon = "__IncendiaryMunitions__/graphics/icons/incendiary-shotgun-shell.png",
+        icon_size = 32,
         flags = { "goes-to-main-inventory" },
         ammo_type =
         {

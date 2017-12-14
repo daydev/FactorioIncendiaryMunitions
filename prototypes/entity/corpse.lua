@@ -3,6 +3,7 @@ data:extend({
         type = "corpse",
         name = "napalm-scorchmark",
         icon = "__base__/graphics/icons/small-scorchmark.png",
+        icon_size = 32,
         flags = { "placeable-neutral", "not-on-map" },
         selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
         tile_width = 1,

@@ -5,6 +5,7 @@ data:extend({
         type = "land-mine",
         name = "fire-trap",
         icon = "__IncendiaryMunitions__/graphics/icons/fire-trap.png",
+        icon_size = 32,
         resistances = {
             { type = "fire", percent = 100 },
             { type = "explosion", percent = 100 },
@@ -54,7 +55,7 @@ data:extend({
                         action =
                         {
                             type = "area",
-                            perimeter = 6,
+                            radius = 6,
                             collision_mask = { "player-layer" },
                             action_delivery =
                             {

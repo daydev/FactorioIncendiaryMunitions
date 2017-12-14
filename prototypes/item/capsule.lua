@@ -3,6 +3,7 @@ data:extend{
         type = "capsule",
         name = "molotov-cocktail",
         icon = "__IncendiaryMunitions__/graphics/icons/molotov-cocktail.png",
+        icon_size = 32,
         flags = {"goes-to-quickbar"},
         capsule_action =
         {

@@ -24,7 +24,7 @@ data.raw["projectile"]["explosive-rocket"].action =
                 action =
                 {
                     type = "area",
-                    perimeter = 6.5,
+                    radius = 6.5,
                     action_delivery =
                     {
                         type = "instant",
@@ -71,7 +71,7 @@ data.raw["projectile"]["explosive-cannon-projectile"].final_action =
                 action =
                 {
                     type = "area",
-                    perimeter = 4,
+                    radius = 4,
                     action_delivery =
                     {
                         type = "instant",
@@ -101,7 +101,8 @@ data.raw["projectile"]["explosive-cannon-projectile"].final_action =
     }
 }
 
-data.raw["projectile"]["explosive-uranium-cannon-projectile"].final_action = {
+data.raw["projectile"]["explosive-uranium-cannon-projectile"].final_action =
+{
     type = "direct",
     action_delivery =
     {
@@ -117,7 +118,7 @@ data.raw["projectile"]["explosive-uranium-cannon-projectile"].final_action = {
                 action =
                 {
                     type = "area",
-                    perimeter = 4.25,
+                    radius = 4.25,
                     action_delivery =
                     {
                         type = "instant",

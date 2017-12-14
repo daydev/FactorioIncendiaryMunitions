@@ -97,7 +97,7 @@ data:extend({
             },
             {
                 type = "area",
-                perimeter = 5,
+                radius = 5,
                 action_delivery =
                 {
                     type = "instant",
@@ -171,7 +171,7 @@ data:extend({
             },
             {
                 type = "area",
-                perimeter = 7,
+                radius = 7,
                 action_delivery =
                 {
                     type = "instant",
