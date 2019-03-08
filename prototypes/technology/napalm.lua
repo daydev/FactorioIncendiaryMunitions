@@ -16,17 +16,16 @@ data:extend(
                     recipe = "molotov-cocktail"
                 }
             },
-            prerequisites = {"incendiary-ammo", "flammables"},
+            prerequisites = {"military-3", "incendiary-ammo", "flammables"},
             unit =
             {
-                count = 300,
+                count = 400,
                 ingredients =
                 {
-                    {"science-pack-1", 1},
-                    {"science-pack-2", 1},
-                    {"science-pack-3", 1},
-                    {"military-science-pack", 1},
-                    {"production-science-pack", 1}
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1},
+                    {"military-science-pack", 1}
                 },
                 time = 30
             },

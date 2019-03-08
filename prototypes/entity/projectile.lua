@@ -40,8 +40,20 @@ data:extend({
                     },
                     {
                         type = "create-fire",
-                        entity_name = "fire-flame"
-                    },
+                        entity_name = "fire-flame",
+                        initial_ground_flame_count = 2
+                    }
+                }
+            }
+        },
+        {
+            type = "area",
+            radius = 2,
+            action_delivery =
+            {
+                type = "instant",
+                target_effects =
+                {
                     {
                         type = "create-sticker",
                         sticker = "fire-sticker"

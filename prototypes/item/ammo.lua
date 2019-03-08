@@ -4,7 +4,6 @@ data:extend({
         name = "incendiary-rounds-magazine",
         icon = "__IncendiaryMunitions__/graphics/icons/incendiary-rounds-magazine.png",
         icon_size = 32,
-        flags = { "goes-to-main-inventory" },
         ammo_type =
         {
             category = "bullet",
@@ -37,7 +36,18 @@ data:extend({
                             {
                                 type = "create-fire",
                                 entity_name = "fire-flame"
-                            },
+                            }
+                        }
+                    }
+                },
+                {
+                    type = "area",
+                    radius = 1.5,
+                    action_delivery =
+                    {
+                        type = "instant",
+                        target_effects =
+                        {
                             {
                                 type = "create-sticker",
                                 sticker = "fire-sticker"
@@ -69,7 +79,6 @@ data:extend({
         name = "incendiary-shotgun-shell",
         icon = "__IncendiaryMunitions__/graphics/icons/incendiary-shotgun-shell.png",
         icon_size = 32,
-        flags = { "goes-to-main-inventory" },
         ammo_type =
         {
             category = "shotgun-shell",

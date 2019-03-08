@@ -16,16 +16,16 @@ data:extend(
                 recipe = "incendiary-shotgun-shell"
             }
         },
-        prerequisites = {"military-4"},
+        prerequisites = {"military-2"},
         unit =
         {
-            count = 200,
+            count = 250,
             ingredients =
             {
-                {"science-pack-1", 1},
-                {"science-pack-2", 1},
-                {"science-pack-3", 1},
-                {"military-science-pack", 2}
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"military-science-pack", 1}
             },
             time = 30
         },
