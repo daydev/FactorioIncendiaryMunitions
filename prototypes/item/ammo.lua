@@ -1,53 +1,51 @@
+local bullet_effect_direct = {
+    {
+        type = "create-entity",
+        entity_name = "explosion-hit"
+    },
+    {
+        type = "damage",
+        damage = { amount = 6, type = "physical" }
+    },
+    {
+        type = "damage",
+        damage = { amount = 2, type = "fire" }
+    }
+}
+
+if settings.startup["incendiary-ammo-is-ammo-set-fires"].value then
+    table.insert(bullet_effect_direct, {
+        type = "create-fire",
+        entity_name = "fire-flame"
+    })
+end
+
 data:extend({
     {
         type = "ammo",
         name = "incendiary-rounds-magazine",
         icon = "__IncendiaryMunitions__/graphics/icons/incendiary-rounds-magazine.png",
         icon_size = 32,
-        ammo_type =
-        {
+        ammo_type = {
             category = "bullet",
-            action =
-            {
+            action = {
                 {
                     type = "direct",
-                    action_delivery =
-                    {
+                    action_delivery = {
                         type = "instant",
-                        source_effects =
-                        {
+                        source_effects = {
                             type = "create-explosion",
                             entity_name = "explosion-gunshot"
                         },
-                        target_effects =
-                        {
-                            {
-                                type = "create-entity",
-                                entity_name = "explosion-hit"
-                            },
-                            {
-                                type = "damage",
-                                damage = { amount = 6, type = "physical" }
-                            },
-                            {
-                                type = "damage",
-                                damage = { amount = 2, type = "fire" }
-                            },
-                            {
-                                type = "create-fire",
-                                entity_name = "fire-flame"
-                            }
-                        }
+                        target_effects = bullet_effect_direct
                     }
                 },
                 {
                     type = "area",
                     radius = 1.5,
-                    action_delivery =
-                    {
+                    action_delivery = {
                         type = "instant",
-                        target_effects =
-                        {
+                        target_effects = {
                             {
                                 type = "create-sticker",
                                 sticker = "fire-sticker"
@@ -57,8 +55,7 @@ data:extend({
                 },
                 {
                     type = "direct",
-                    action_delivery =
-                    {
+                    action_delivery = {
                         type = "projectile",
                         projectile = "incendiary-bullet-trace",
                         starting_speed = 1,
@@ -79,19 +76,15 @@ data:extend({
         name = "incendiary-shotgun-shell",
         icon = "__IncendiaryMunitions__/graphics/icons/incendiary-shotgun-shell.png",
         icon_size = 32,
-        ammo_type =
-        {
+        ammo_type = {
             category = "shotgun-shell",
             target_type = "direction",
-            action =
-            {
+            action = {
                 {
                     type = "direct",
-                    action_delivery =
-                    {
+                    action_delivery = {
                         type = "instant",
-                        source_effects =
-                        {
+                        source_effects = {
                             {
                                 type = "create-explosion",
                                 entity_name = "explosion-gunshot"
@@ -102,8 +95,7 @@ data:extend({
                 {
                     type = "direct",
                     repeat_count = 12,
-                    action_delivery =
-                    {
+                    action_delivery = {
                         type = "projectile",
                         projectile = "incendiary-shotgun-pellet",
                         starting_speed = 1,

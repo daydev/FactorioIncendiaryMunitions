@@ -1,3 +1,23 @@
+local pellet_effect_direct = {
+    {
+        type = "damage",
+        damage = { amount = 6, type = "physical" }
+    },
+    {
+        type = "damage",
+        damage = { amount = 4, type = "fire" }
+    }
+}
+
+
+if settings.startup["incendiary-ammo-is-ammo-set-fires"].value then
+    table.insert(pellet_effect_direct, {
+        type = "create-fire",
+        entity_name = "fire-flame",
+        initial_ground_flame_count = 2
+    })
+end
+
 data:extend({
     {
         type = "projectile",
@@ -6,8 +26,7 @@ data:extend({
         collision_box = { { -0.05, -0.25 }, { 0.05, 0.25 } },
         acceleration = 0,
         direction_only = true,
-        animation =
-        {
+        animation = {
             filename = "__IncendiaryMunitions__/graphics/entity/incendiary-bullet/incendiary-bullet-trace.png",
             frame_count = 1,
             width = 3,
@@ -22,38 +41,19 @@ data:extend({
         collision_box = { { -0.05, -0.25 }, { 0.05, 0.25 } },
         acceleration = 0,
         direction_only = true,
-        action =
-        {
+        action = {
             type = "direct",
-            action_delivery =
-            {
+            action_delivery = {
                 type = "instant",
-                target_effects =
-                {
-                    {
-                        type = "damage",
-                        damage = { amount = 6, type = "physical" }
-                    },
-                    {
-                        type = "damage",
-                        damage = { amount = 4, type = "fire" }
-                    },
-                    {
-                        type = "create-fire",
-                        entity_name = "fire-flame",
-                        initial_ground_flame_count = 2
-                    }
-                }
+                target_effects = pellet_effect_direct
             }
         },
         {
             type = "area",
             radius = 2,
-            action_delivery =
-            {
+            action_delivery = {
                 type = "instant",
-                target_effects =
-                {
+                target_effects = {
                     {
                         type = "create-sticker",
                         sticker = "fire-sticker"
@@ -61,8 +61,7 @@ data:extend({
                 }
             }
         },
-        animation =
-        {
+        animation = {
             filename = "__IncendiaryMunitions__/graphics/entity/incendiary-pellet/incendiary-shotgun-pellet.png",
             frame_count = 1,
             width = 3,
@@ -76,15 +75,12 @@ data:extend({
         name = "molotov-cocktail",
         flags = { "not-on-map" },
         acceleration = 0.005,
-        action =
-        {
+        action = {
             {
                 type = "direct",
-                action_delivery =
-                {
+                action_delivery = {
                     type = "instant",
-                    target_effects =
-                    {
+                    target_effects = {
                         {
                             type = "create-entity",
                             entity_name = "fiery-explosion"
@@ -96,8 +92,7 @@ data:extend({
                         },
                         {
                             type = "play-sound",
-                            sound =
-                            {
+                            sound = {
                                 {
                                     filename = "__IncendiaryMunitions__/sound/explosion/glass-breaking.ogg",
                                     volume = 1
@@ -110,11 +105,9 @@ data:extend({
             {
                 type = "area",
                 radius = 5,
-                action_delivery =
-                {
+                action_delivery = {
                     type = "instant",
-                    target_effects =
-                    {
+                    target_effects = {
                         {
                             type = "damage",
                             damage = { amount = 5, type = "physical" }
@@ -127,8 +120,7 @@ data:extend({
                 cluster_count = 11,
                 distance = 5,
                 distance_deviation = 4,
-                action_delivery =
-                {
+                action_delivery = {
                     type = "projectile",
                     projectile = "molotov-splash",
                     direction_deviation = 0.6,
@@ -145,8 +137,7 @@ data:extend({
             height = 24,
             priority = "high"
         },
-        shadow =
-        {
+        shadow = {
             filename = "__base__/graphics/entity/grenade/grenade-shadow.png",
             frame_count = 1,
             width = 24,
@@ -160,15 +151,12 @@ data:extend({
         name = "molotov-splash",
         flags = { "not-on-map" },
         acceleration = 0.005,
-        action =
-        {
+        action = {
             {
                 type = "direct",
-                action_delivery =
-                {
+                action_delivery = {
                     type = "instant",
-                    target_effects =
-                    {
+                    target_effects = {
                         {
                             type = "create-entity",
                             entity_name = "fiery-splash"
@@ -184,11 +172,9 @@ data:extend({
             {
                 type = "area",
                 radius = 7,
-                action_delivery =
-                {
+                action_delivery = {
                     type = "instant",
-                    target_effects =
-                    {
+                    target_effects = {
                         {
                             type = "damage",
                             damage = { amount = 20, type = "fire" }
@@ -210,16 +196,14 @@ data:extend({
             }
         },
         light = { intensity = 0.5, size = 4 },
-        animation =
-        {
+        animation = {
             filename = "__IncendiaryMunitions__/graphics/entity/molotov/molotov-splash.png",
             frame_count = 1,
             width = 24,
             height = 24,
             priority = "high"
         },
-        shadow =
-        {
+        shadow = {
             filename = "__base__/graphics/entity/grenade/grenade-shadow.png",
             frame_count = 1,
             width = 24,
