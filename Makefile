@@ -1,4 +1,4 @@
-VERSION := 0.4.170
+VERSION := 0.5.0
 NAME := IncendiaryMunitions
 FACTORIO_HOME := $$HOME/bin/games/factorio
 
@@ -7,7 +7,7 @@ all: clean build install_mod
 build:
 	mkdir build/
 	mkdir build/$(NAME)_$(VERSION)
-	cp -R info.json thumbnail.png data.lua control.lua settings.lua prototypes graphics sound locale build/$(NAME)_$(VERSION)
+	cp -R info.json thumbnail.png changelog.txt data.lua control.lua settings.lua prototypes graphics sound locale build/$(NAME)_$(VERSION)
 	cd build && zip -r $(NAME)_$(VERSION).zip $(NAME)_$(VERSION)
 
 clean:

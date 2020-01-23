@@ -1,0 +1,58 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2020-01-23
+  Features:
+    - Updated for Factorio 0.18.
+    - Added changelog.
+---------------------------------------------------------------------------------------------------
+Version: 0.4.170
+Date: 2019-06-22
+  Features:
+    - A setting to disable the incendiary rounds and shotgun shells setting fire.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.17
+Date: 2019-05-08
+  Features:
+    - Updated for Factorio 0.17.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 2017-12-14
+  Features:
+    - Updated for Factorio 0.16
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2017-05-12
+  Features:
+    - Extra strong "napalm" incendiary munitions.
+    - Napalm incendiary cluster grenades in the form of Molotov's cocktails
+    - Napalm mines in the form of fire traps (look like gasoline puddles)
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: 2017-05-10
+  Changes:
+    - Update to incorporate the changes in base game explosive munitions.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 2017-05-10
+  Features:
+    - Updated for Factorio 0.15.
+  Changes:
+    - AmmoBox mod ammo no longer supported.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 2020-01-23
+  Features:
+    - Updated for Factorio 0.14.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2020-01-23
+  Features:
+    - Incendiary version of the AmmoBox mod ammo.
+    - Base game explosive munitions (cannon shells, rockets) updated to set fires in the area of effect. 
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2020-01-23
+  Features:
+    - Incendiary rounds and shotgun shells that deal fire type damage and set fire to the target.
+  Locale:
+    - English, Russian, Ukrainian.
